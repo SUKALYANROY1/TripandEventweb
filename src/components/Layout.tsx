@@ -2,6 +2,7 @@ import { Link, Outlet, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import img4Logo from "../img/logo/img4.png";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +31,12 @@ export function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-6">
+              <img
+                src={img4Logo}
+                alt="Trip Media Logo"
+                className="w-20 h-17 object-contain rounded-full"
+              />
               <div className="text-2xl tracking-tight text-white font-medium">
                 TRIP <span className="text-[#ea580c]">MEDIA</span>
               </div>
